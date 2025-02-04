@@ -47,7 +47,7 @@ for vacancy in vacancies:
 
 driver.quit()
 
-with open('hh.csv', 'w', newline='', encoding='utf-8') as file:
+with open('hh_selenium.csv', 'w', newline='', encoding='utf-8') as file:
     writer = csv.writer(file)
     writer.writerow(['Вакансия', 'Компания', 'Зарплата', 'Ссылка'])
     writer.writerows(parsed_data)
